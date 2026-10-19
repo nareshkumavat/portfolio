@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naresh Kumavat — AI/ML & Big Data</title>
+<meta name="description" content="Portfolio of Naresh Kumavat — Computer Science undergraduate working across AI/ML, big data analytics and privacy-first web applications." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23c8ff3e'/><text x='50' y='70' font-size='58' font-family='monospace' font-weight='bold' text-anchor='middle' fill='%23090b0a'>N</text></svg>" />
+</head>
+<body>
+
+<!-- boot screen -->
+<div class="boot" id="boot">
+  <div class="boot__scan" aria-hidden="true"></div>
+  <div class="boot__inner">
+    <div class="boot__row">
+      <span class="mono">NARESH.SYS</span>
+      <span class="mono" id="bootPct">000%</span>
+    </div>
+    <div class="boot__lines">
+      <p><span class="mono dim">&gt;</span> initialising portfolio<span class="dots"></span></p>
+      <p><span class="mono dim">&gt;</span> loading modules <b>ai / data / web</b></p>
+      <p><span class="mono dim">&gt;</span> status <b class="ok">ready</b></p>
+    </div>
+    <div class="boot__bar"><i id="bootBar"></i></div>
+  </div>
+</div>
+
+<div class="noise" aria-hidden="true"></div>
+<div class="scrollbar" id="scrollbar"></div>
+<div class="glow-cursor" id="glowCursor" aria-hidden="true"></div>
+
+<canvas id="field" class="field" aria-hidden="true"></canvas>
+
+<!-- top bar -->
+<header class="topbar">
+  <a href="#top" class="brand">
+    <span class="brand__glyph">NK</span>
+    <span class="brand__text">naresh<span>.</span>kumavat</span>
+  </a>
+
+  <div class="topbar__status mono">
+    <i class="live-dot"></i> OPEN TO WORK
+  </div>
+
+  <nav class="menu" id="menu">
+    <a href="#profile" class="menu__link"><span class="mono">01</span> Profile</a>
+    <a href="#stack" class="menu__link"><span class="mono">02</span> Stack</a>
+    <a href="#projects" class="menu__link"><span class="mono">03</span> Projects</a>
+    <a href="#campus" class="menu__link"><span class="mono">04</span> Campus</a>
+    <a href="#credentials" class="menu__link"><span class="mono">05</span> Certs</a>
+  </nav>
+
+  <a href="#contact" class="cta magnetic" data-magnet>
+    <span>Contact</span>
+    <span class="cta__dot"></span>
+  </a>
+
+  <button class="toggle" id="toggle" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__meta mono">
+    <span>20.9°N / 73.1°E</span>
+    <span>VADODARA, IN</span>
+    <span>B.TECH · CSE · BIG DATA</span>
+  </div>
+
+  <div class="hero__stage">
+    <div class="hero__copy">
+      <div class="hero__badge reveal">
+        <span class="hero__badge-dot"></span>
+        AI/ML · BIG DATA · WEB
+      </div>
+
+      <h1 class="hero__name">
+        <span class="row reveal"><span class="row__text">NARESH</span></span>
+        <span class="row row--outline reveal"><span class="row__text">KUMAVAT</span></span>
+      </h1>
+
+      <div class="hero__typer reveal">
+        <span class="mono dim">$</span>
+        <span class="mono" id="typer">building privacy-first tools</span>
+        <span class="caret"></span>
+      </div>
+
+      <p class="hero__p reveal">
+        Computer Science undergraduate specialising in <b>Big Data Analytics</b> —
+        hands-on with AI/ML, AI-assisted development, and data-driven products.
+        I like problems where the answer is a working thing, not a slide.
+      </p>
+
+      <div class="hero__actions reveal">
+        <a href="#projects" class="btn btn--lime magnetic" data-magnet>
+          <span>See projects</span>
+          <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--line" data-magnet>
+          <span>nareshkumavaty@gmail.com</span>
+        </a>
+      </div>
+    </div>
+
+    <aside class="hero__panel reveal">
+      <div class="panel">
+        <div class="panel__head">
+          <span class="mono">~/profile.json</span>
+          <span class="panel__dots"><i></i><i></i><i></i></span>
+        </div>
+        <pre class="panel__code"><code><span class="c-key">"name"</span>: <span class="c-str">"Naresh Kumavat"</span>,
+<span class="c-key">"role"</span>: <span class="c-str">"CS Undergrad"</span>,
+<span class="c-key">"focus"</span>: [
+  <span class="c-str">"AI/ML"</span>,
+  <span class="c-str">"Big Data"</span>,
+  <span class="c-str">"Web"</span>
+],
+<span class="c-key">"cgpa"</span>: <span class="c-num">8.3</span>,
+<span class="c-key">"grad"</span>: <span class="c-num">2027</span>,
+<span class="c-key">"shipping"</span>: <span class="c-bool">true</span>
+</code></pre>
+        <div class="panel__foot">
+          <span class="mono dim">UTF-8 · LF</span>
+          <span class="mono ok">● VERIFIED</span>
+        </div>
+      </div>
+
+      <div class="panel__float panel__float--1">
+        <span class="mono dim">PROJECTS</span>
+        <b>02</b>
+        <span class="panel__float-line"></span>
+        <span class="mono dim">LIVE</span>
+      </div>
+      <div class="panel__float panel__float--2">
+        <span class="mono dim">CERTS</span>
+        <b>03</b>
+      </div>
+    </aside>
+  </div>
+
+  <div class="hero__scroll mono">
+    <span>SCROLL TO EXPLORE</span>
+    <span class="hero__scroll-line"></span>
+  </div>
+</section>
+
+<!-- ticker -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__row">
+    <span>PYTHON</span><i>◆</i><span>AI / ML</span><i>◆</i><span>BIG DATA ANALYTICS</span><i>◆</i><span>WEBWORKERS</span><i>◆</i><span>MONGODB</span><i>◆</i><span>POWER BI</span><i>◆</i><span>AWS</span><i>◆</i>
+    <span>PYTHON</span><i>◆</i><span>AI / ML</span><i>◆</i><span>BIG DATA ANALYTICS</span><i>◆</i><span>WEBWORKERS</span><i>◆</i><span>MONGODB</span><i>◆</i><span>POWER BI</span><i>◆</i><span>AWS</span><i>◆</i>
+  </div>
+</div>
+
+<!-- ============ PROFILE ============ -->
+<section class="section" id="profile">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__num mono reveal">01 / PROFILE</span>
+      <h2 class="sec-head__title reveal">The short<br /><em>version.</em></h2>
+      <p class="sec-head__note mono reveal">EDUCATION · APPROACH · STATS</p>
+    </div>
+
+    <div class="profile">
+      <div class="profile__text reveal">
+        <p class="profile__lead">
+          I turn messy inputs into <b>useful, working products</b> —
+          often with AI in the loop, always with the user in mind.
+        </p>
+        <p class="profile__body">
+          Currently pursuing B.Tech in Computer Science with a specialisation in Big Data
+          Analytics at Parul University. My work sits across three overlapping areas:
+          intelligent systems, data pipelines, and the interfaces that make either useful.
+        </p>
+        <p class="profile__body">
+          Outside of coursework I build small, sharp tools — like a document processor that
+          never lets a file leave the browser — and I coordinate tech events on campus.
+        </p>
+
+        <div class="edu">
+          <div class="edu__time mono">2023 — 2027 (EXPECTED)</div>
+          <div class="edu__main">
+            <h3>Parul University, Vadodara</h3>
+            <p>B.Tech, Computer Science Engineering — Big Data Analytics</p>
+          </div>
+          <div class="edu__gpa">
+            <span class="mono dim">CGPA</span>
+            <b>8.3<span>/10</span></b>
+          </div>
+        </div>
+
+        <div class="edu edu--sm">
+          <div class="edu__time mono">2023</div>
+          <div class="edu__main">
+            <h3>Jaipuriar School, Sanpada</h3>
+            <p>Class XII · CBSE Board — 70%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile__side">
+        <div class="statcard reveal">
+          <span class="mono dim">CURRENT FOCUS</span>
+          <h3>Building tools that respect the data they touch.</h3>
+          <ul>
+            <li><span class="mono">01</span> Privacy-first architecture</li>
+            <li><span class="mono">02</span> AI-assisted development</li>
+            <li><span class="mono">03</span> Data-driven UX</li>
+          </ul>
+          <div class="statcard__glow"></div>
+        </div>
+
+        <div class="numbers reveal">
+          <div class="num"><b data-count="8.3" data-decimals="1">0</b><span class="mono">CGPA</span></div>
+          <div class="num"><b data-count="2">0</b><span class="mono">PROJECTS</span></div>
+          <div class="num"><b data-count="3">0</b><span class="mono">CERTS</span></div>
+          <div class="num"><b data-count="1">0</b><span class="mono">HACKATHON</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="section section--edge" id="stack">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__num mono reveal">02 / STACK</span>
+      <h2 class="sec-head__title reveal">What I <em>build</em> with.</h2>
+      <p class="sec-head__note mono reveal">TOOLS · LANGUAGES · SYSTEMS</p>
+    </div>
+
+    <div class="stack">
+      <article class="stack__card reveal" data-tilt>
+        <div class="stack__top"><span class="mono">/ 01</span><h3>Languages &amp; Data</h3><span class="stack__ico">{ }</span></div>
+        <ul class="stack__list">
+          <li><span>Python</span><i style="--w:90%"></i><em class="mono">DAY-TO-DAY</em></li>
+          <li><span>JavaScript</span><i style="--w:80%"></i><em class="mono">WEB</em></li>
+          <li><span>Java</span><i style="--w:66%"></i><em class="mono">OOP</em></li>
+          <li><span>C</span><i style="--w:60%"></i><em class="mono">FUNDAMENTALS</em></li>
+          <li><span>SQL · MongoDB</span><i style="--w:78%"></i><em class="mono">QUERY</em></li>
+        </ul>
+      </article>
+
+      <article class="stack__card reveal" data-tilt>
+        <div class="stack__top"><span class="mono">/ 02</span><h3>AI / ML &amp; Big Data</h3><span class="stack__ico">◈</span></div>
+        <ul class="stack__list">
+          <li><span>AI / ML fundamentals</span><i style="--w:84%"></i><em class="mono">CORE</em></li>
+          <li><span>Big Data Analytics</span><i style="--w:82%"></i><em class="mono">SPECIALITY</em></li>
+          <li><span>AI-assisted dev</span><i style="--w:88%"></i><em class="mono">WORKFLOW</em></li>
+          <li><span>Data Structures</span><i style="--w:76%"></i><em class="mono">DSA</em></li>
+          <li><span>Power BI</span><i style="--w:70%"></i><em class="mono">VIZ</em></li>
+        </ul>
+      </article>
+
+      <article class="stack__card reveal" data-tilt>
+        <div class="stack__top"><span class="mono">/ 03</span><h3>Web &amp; Cloud</h3><span class="stack__ico">◧</span></div>
+        <ul class="stack__list">
+          <li><span>HTML · CSS</span><i style="--w:86%"></i><em class="mono">UI</em></li>
+          <li><span>Web Workers</span><i style="--w:74%"></i><em class="mono">PERF</em></li>
+          <li><span>AWS</span><i style="--w:62%"></i><em class="mono">CLOUD</em></li>
+          <li><span>Git</span><i style="--w:80%"></i><em class="mono">VCS</em></li>
+          <li><span>Figma</span><i style="--w:72%"></i><em class="mono">DESIGN</em></li>
+        </ul>
+      </article>
+
+      <article class="stack__card stack__card--wide reveal">
+        <div class="stack__top"><span class="mono">/ 04</span><h3>Core CS &amp; Systems</h3><span class="stack__ico">⌬</span></div>
+        <div class="stack__tags">
+          <span>DBMS</span><span>Computer Networks</span><span>Operating Systems</span>
+          <span>Cloud Computing</span><span>Embedded Systems Basics</span><span>Linux Fundamentals</span>
+          <span>Software Engineering</span><span>Problem Solving</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="sec-head sec-head--split">
+      <div>
+        <span class="sec-head__num mono reveal">03 / PROJECTS</span>
+        <h2 class="sec-head__title reveal">Built, shipped,<br /><em>still learning.</em></h2>
+      </div>
+      <p class="sec-head__note sec-head__note--wide reveal">
+        Two live builds — one about privacy, one about people choosing a direction.
+      </p>
+    </div>
+
+    <div class="projects">
+
+      <article class="proj proj--feature reveal" data-tilt>
+        <div class="proj__glow"></div>
+        <div class="proj__head">
+          <span class="proj__id mono">P—001</span>
+          <span class="proj__status mono"><i></i> LIVE</span>
+        </div>
+
+        <div class="proj__body">
+          <div class="proj__copy">
+            <h3>ClientPDF<span class="dot">.</span></h3>
+            <p class="proj__tag mono">ZERO-SERVER DOCUMENT PROCESSOR</p>
+            <p class="proj__desc">
+              A document tool that never uploads anything. All processing runs in
+              Web Workers inside the browser, so complex transformations happen with
+              zero data leakage and zero server bills.
+            </p>
+            <ul class="proj__points">
+              <li>100% client-side processing — files never leave the device</li>
+              <li>Built rapidly with AI-driven development and generated assets</li>
+              <li>Handles heavy document transforms without blocking the UI</li>
+            </ul>
+            <div class="proj__tags">
+              <span>Web Workers</span><span>JavaScript</span><span>Client-side</span><span>Privacy</span>
+            </div>
+            <a href="https://clientpdf.tech" target="_blank" rel="noopener noreferrer" class="proj__link magnetic" data-magnet>
+              <span>Open live project</span>
+              <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+
+          <div class="proj__art" aria-hidden="true">
+            <div class="browser">
+              <div class="browser__bar">
+                <span class="mono">clientpdf.local</span>
+                <span class="browser__lock mono">● LOCAL</span>
+              </div>
+              <div class="browser__body">
+                <div class="drop">
+                  <span class="drop__icon">⇪</span>
+                  <span class="mono">DROP PDF HERE</span>
+                  <span class="drop__sub">processed in-browser</span>
+                </div>
+                <div class="browser__file">
+                  <span class="mono">contract.pdf</span>
+                  <div class="browser__prog"><i></i></div>
+                  <span class="mono ok">100%</span>
+                </div>
+                <div class="browser__rows"><span></span><span></span><span></span></div>
+                <div class="browser__badge mono">NO UPLOADS · NO SERVER</div>
+              </div>
+            </div>
+            <div class="art-ring"></div>
+            <div class="art-tag art-tag--1 mono">0 BYTES UPLOADED</div>
+            <div class="art-tag art-tag--2 mono">WEB WORKER ✓</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj reveal" data-tilt>
+        <div class="proj__glow"></div>
+        <div class="proj__head">
+          <span class="proj__id mono">P—002</span>
+          <span class="proj__status mono"><i></i> LIVE</span>
+        </div>
+
+        <div class="proj__body proj__body--stack">
+          <div class="proj__copy">
+            <h3>Trajectio<span class="dot">.</span></h3>
+            <p class="proj__tag mono">CAREER GUIDANCE PLATFORM · SIH</p>
+            <p class="proj__desc">
+              A web platform that helps students and parents cut through career noise.
+              A short quiz maps selected interests to the best-fit path, with structured
+              navigation and personalised accounts.
+            </p>
+            <div class="proj__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Auth</span><span>Recommendation logic</span>
+            </div>
+            <a href="http://nareshkumavat.github.io/TechTitans/home" target="_blank" rel="noopener noreferrer" class="proj__link magnetic" data-magnet>
+              <span>Open live project</span>
+              <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+
+          <div class="proj__quiz" aria-hidden="true">
+            <span class="mono dim">QUESTION 04 / 08</span>
+            <p>Which of these sounds most like you?</p>
+            <div class="quiz__opt"><i></i>Solving logical puzzles</div>
+            <div class="quiz__opt is-on"><i></i>Designing how things look</div>
+            <div class="quiz__opt"><i></i>Analysing numbers</div>
+            <div class="quiz__bar"><span></span></div>
+          </div>
+        </div>
+      </article>
+
+      <div class="proj__next reveal">
+        <span class="mono dim">NEXT UP</span>
+        <p>Exploring agents, retrieval pipelines and analytics dashboards for real datasets.</p>
+        <span class="mono">OPEN TO COLLABORATE →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAMPUS ============ -->
+<section class="section section--edge" id="campus">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__num mono reveal">04 / CAMPUS</span>
+      <h2 class="sec-head__title reveal">Off the <em>keyboard.</em></h2>
+      <p class="sec-head__note mono reveal">HACKATHONS · EVENTS</p>
+    </div>
+
+    <div class="campus">
+      <article class="campus__item reveal">
+        <div class="campus__mark mono">2025</div>
+        <div class="campus__copy">
+          <h3>Smart India Hackathon</h3>
+          <p class="campus__role">Participant</p>
+          <p>Built Trajectio — a web-based career counselling platform helping students identify suitable academic and career paths.</p>
+        </div>
+        <span class="campus__tag mono">TEAM BUILD</span>
+      </article>
+
+      <article class="campus__item reveal">
+        <div class="campus__mark mono">2025</div>
+        <div class="campus__copy">
+          <h3>Google NXT Hub Inauguration</h3>
+          <p class="campus__role">Event Coordination</p>
+          <p>Coordinated the campus launch event — logistics, scheduling and on-ground execution for a large student audience.</p>
+        </div>
+        <span class="campus__tag mono">OPERATIONS</span>
+      </article>
+
+      <article class="campus__note reveal">
+        <span class="mono dim">ALSO INTERESTED IN</span>
+        <p>Design systems, data storytelling, developer tooling, and anything that removes a manual step.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREDENTIALS ============ -->
+<section class="section" id="credentials">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__num mono reveal">05 / CERTS</span>
+      <h2 class="sec-head__title reveal">Paper trail<span class="accent">.</span></h2>
+      <p class="sec-head__note mono reveal">VERIFIED LEARNING</p>
+    </div>
+
+    <div class="creds">
+      <a href="https://skills4future.in/certificate-verification-master-deck/S4F25_188500" target="_blank" rel="noopener noreferrer" class="cred reveal" data-tilt>
+        <div class="cred__glow"></div>
+        <span class="cred__index mono">01</span>
+        <h3>Green Skills AI</h3>
+        <span class="cred__issuer">Edunet Foundation</span>
+        <span class="cred__verify mono">VIEW CERTIFICATE ↗</span>
+      </a>
+      <a href="https://nptel.ac.in/noc/E_Certificate/NPTEL25CS15S115230101804265700" target="_blank" rel="noopener noreferrer" class="cred reveal" data-tilt>
+        <div class="cred__glow"></div>
+        <span class="cred__index mono">02</span>
+        <h3>Computer Networks &amp; Internet Protocols</h3>
+        <span class="cred__issuer">NPTEL</span>
+        <span class="cred__verify mono">VIEW CERTIFICATE ↗</span>
+      </a>
+      <a href="https://drive.google.com/file/d/1s1SdfdV2bsSyFZb_4VcApXa9cosQEUX4/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cred reveal" data-tilt>
+        <div class="cred__glow"></div>
+        <span class="cred__index mono">03</span>
+        <h3>Graphic Design</h3>
+        <span class="cred__issuer">Infinity Linkage</span>
+        <span class="cred__verify mono">VIEW CERTIFICATE ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact__top mono">
+      <span>06 / CONTACT</span>
+      <span>RESPONSE TIME — USUALLY &lt; 24H</span>
+    </div>
+
+    <h2 class="contact__title">
+      <span class="reveal">Got a problem</span>
+      <span class="reveal"><em>worth building?</em></span>
+    </h2>
+
+    <div class="contact__bottom">
+      <a href="mailto:nareshkumavaty@gmail.com" class="contact__mail magnetic" data-magnet>
+        <span>nareshkumavaty@gmail.com</span>
+        <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+
+      <div class="contact__links">
+        <a href="https://github.com/nareshkumavat" target="_blank" rel="noopener noreferrer" class="mono">GITHUB ↗</a>
+        <a href="https://in.linkedin.com/in/naresh-kumavat-70ba65291" target="_blank" rel="noopener noreferrer" class="mono">LINKEDIN ↗</a>
+        <a href="tel:+918239444506" class="mono">+91 82394 44506</a>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <span class="mono">© <span id="year">2026</span> NARESH KUMAVAT</span>
+      <span class="mono dim">BUILT FROM SCRATCH · NO TEMPLATE</span>
+      <a href="#top" class="mono">BACK TO TOP ↑</a>
+    </footer>
+  </div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
